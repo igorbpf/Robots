@@ -1,5 +1,9 @@
 #!usr/bin/env
 
+# Author: Igor Santos
+# License: MIT
+
+
 # Python modules
 from __future__ import division
 import random
@@ -9,8 +13,6 @@ from time import time
 
 # third-party modules
 import pygame
-
-__author__ = 'igorbpf'
 
 # parse commandline arguments
 op = OptionParser()
@@ -23,8 +25,6 @@ op.add_option("--mindistance", type=int, default=20,
               help="Minimum distance between two boids. The default is 20 unit of measurement.")
 op.add_option("--time", type=int, default=10,
               help="Time of execution. The default is 10 seconds.")
-
-print(__author__)
 
 (opts, args) = op.parse_args()
 if len(args) > 0:

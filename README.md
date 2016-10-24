@@ -56,7 +56,7 @@ It is also possible add some flags in order to change some variables. The comman
 
 python flocking.py --formation=V --time=30  
 
-will execute the program for 30 seconds and with th V formation. Type python flocking.py -h
+will execute the program for 30 seconds and with the V formation. Type python flocking.py -h
 to get more details about the flags available.
 
 

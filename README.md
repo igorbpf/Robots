@@ -31,7 +31,7 @@ to get more details about the flags available.
 
 # Formation
 
-The formation folder contains code for the flocking-formation problem.
+The formation folder contains code for the flocking-formation problem. Robots following a leader.
 
 The solution was inspired in the algorithm described in the article of Vincenzo Gervasi and 
 Giuseppe Prencipe: Coordination without communication:the case of the focking problem.

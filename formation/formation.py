@@ -4,8 +4,10 @@
 # License: MIT
 
 """
-Possible formations are V, Moose, M, Arrow, U, Line for a even number of followers (8 boids)
-and their degenerations with a odd number of followers (9 boids): V-odd, Moose-odd, M-odd, Arrow-odd, U-odd,
+Possible formations are V, Moose, M, Arrow, U, Line for a even number of
+followers (8 boids)
+and their degenerations with a odd number of followers (9 boids): V-odd,
+Moose-odd, M-odd, Arrow-odd, U-odd,
 Line-odd
 """
 
@@ -74,9 +76,11 @@ class Follower(Leader):
 		n = len(followers)
 		return bx/n , by/n
 
-	# Define the positions of the followers relative to the line which goes from the leader to the barycenter.
+	# Define the positions of the followers relative to the line which goes
+    # from the leader to the barycenter.
 	def Party(self,followers, leader, Xb, Yb):
-		S0 = [] 			# Followers on the line between the leader and the baricenter
+		S0 = [] 			# Followers on the line between the leader and
+                            # the baricenter
 		S1 = [] 			# Followers on the left
 		S2 = []				# Followers on the right
 
@@ -187,7 +191,7 @@ class Follower(Leader):
 		Xbf = xsb/len(slots)
 		Ybf = ysb/len(slots)
 
-		for i in xrange(len(slots)):
+		for i in range(len(slots)):
 			fake = Follower(formation)
 			fake.x = slotsGlobal[i][0]
 			fake.y = slotsGlobal[i][1]
@@ -325,7 +329,7 @@ else:
 
 numFollowers = nBoids
 
-for i in xrange(numFollowers):
+for i in range(numFollowers):
 	followers.append(Follower(opts.formation))
 
 ballFollower = pygame.image.load('../images/smallBall.jpg')
